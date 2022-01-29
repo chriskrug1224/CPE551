@@ -13,19 +13,19 @@ def numbers_and_strings():
     x = 4**5
 
     # Assign a string "Stevens" to a variable y
-    y = 
+    y = "Stevens"
 
     # Repeat variable y 7 times
-    z = 
+    z = y*7
 
     # What is the length of z?
-    length = 
+    length = len(z)
 
     # Concatenate variable y with string " is Great"
-    m = 
+    m = y + " is Great"
 
     # Replace "Great" with "Good" in variable m and assign it to a new variable n
-    h = 
+    h = m.replace("Great", "Good")
 
     return x, y, z, length, m, h
 
@@ -37,11 +37,11 @@ def lists():
     n = "Hoboken is awesome"
 
     # Split variable n on a delimiter space into a list of substrings
-    p = 
+    p = n.split(" ")
 
     # Get all the items past the first of the third substring
     r = 
-
+"
     # Create a 3 x 3 matrix as nested list such that
     #   first row is [1, 4, 5]
     #   second row is [6, 10, 11]
