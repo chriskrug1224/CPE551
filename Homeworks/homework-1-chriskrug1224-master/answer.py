@@ -40,16 +40,16 @@ def lists():
     p = n.split(" ")
 
     # Get all the items past the first of the third substring
-    r = 
+    r = p[2][1:]
 "
     # Create a 3 x 3 matrix as nested list such that
     #   first row is [1, 4, 5]
     #   second row is [6, 10, 11]
     #   third row is [12, 17, 38]
-    A = 
+    A = [[1, 4, 5], [6, 10, 11], [12, 17, 38]]
 
     # Collect the items in the last column of matrix A using list comprehension
-    c = 
+    c = [i[2] for i in A]
 
     # Collect only the even items of the diagonal of matrix A using list comprehension
     d = 
