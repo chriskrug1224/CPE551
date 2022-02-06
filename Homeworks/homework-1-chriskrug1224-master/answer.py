@@ -72,11 +72,10 @@ def dictionaries():
     #   quantity => 18
     #   color => "red"
     f = dict(fruit="apple", quantity=18, color="red")
-    f["quantity"]+=1
     # Get the item in dictionary f that the key "fruit" maps to
     a = f["fruit"]
     # Increase the quantity of f by 1
-    
+    f["quantity"]+=1
     
 
     # Create a nested dictionary where:
