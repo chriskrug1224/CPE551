@@ -34,7 +34,7 @@ def lists():
     """
     This is to review basic operations with lists.
     """
-    n = "Hoboken is awesome"
+    n = "Hoboken is Awesome"
 
     # Split variable n on a delimiter space into a list of substrings
     p = n.split(" ")
@@ -52,12 +52,13 @@ def lists():
     c = [i[2] for i in A]
 
     # Collect only the even items of the diagonal of matrix A using list comprehension
-    d = 
+    d = [A[i][i] for i in [0,1,2] if A[i][i] % 2 == 0]
 
     # We can convert a single character to its underlying integer code (e.g., its ASCII byte value)
     # by passing it to the built-in ord function. Generate a list of these integers to represent
     # each character of the string "Hoboken" using list comprehension.
-    o = 
+    foo = "Hoboken"
+    o = [ord(i) for i in foo]
 
     return p, r, c, d, o
 
@@ -70,10 +71,10 @@ def dictionaries():
     #   fruit => "apple"
     #   quantity => 18
     #   color => "red"
-    f = 
+    f = dict(fruit="apple", quantity=18, color="red")
 
     # Get the item in dictionary f that the key "fruit" maps to
-    a = 
+    a = f["fruit"]
     # Increase the quantity of f by 1
     
 
@@ -81,16 +82,16 @@ def dictionaries():
     #   name => {first_name => "Grace", last_name => "Hopper"} (a dictionary)
     #   jobs => ["scientist", "engineer"] (a list)
     #   age => 85
-    amazing_grace =
+    amazing_grace = {"name": {"first_name": "Grace", "last_name": "Hopper"}, "jobs": ["scientist", "engineer"], "age": 85}
 
     # Add "programmer" to the list of jobs Grace has
-   
+    amazing_grace["jobs"].append("programmer")
 
     # Get the third job Grace has that you recently added
-    p = 
+    p = amazing_grace["jobs"][2]
 
     # Get the sorted keys of amazing_grace in alphabetically ascending order
-    k = 
+    k = list(amazing_grace.keys())
     k.sort()
 
     return a, f, p, k
