@@ -41,7 +41,7 @@ def lists():
 
     # Get all the items past the first of the third substring
     r = p[2][1:]
-"
+
     # Create a 3 x 3 matrix as nested list such that
     #   first row is [1, 4, 5]
     #   second row is [6, 10, 11]
@@ -72,10 +72,11 @@ def dictionaries():
     #   quantity => 18
     #   color => "red"
     f = dict(fruit="apple", quantity=18, color="red")
-
+    f["quantity"]+=1
     # Get the item in dictionary f that the key "fruit" maps to
     a = f["fruit"]
     # Increase the quantity of f by 1
+    
     
 
     # Create a nested dictionary where:
