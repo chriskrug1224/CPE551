@@ -15,7 +15,7 @@ def tuple():
     x = t1[0]
 
     # Print the second from the last element of the tuple "t1".
-    y = t1[3]
+    y = t1[-2]
 
     
     #What's the index of 2 in the tuple "t2"?
