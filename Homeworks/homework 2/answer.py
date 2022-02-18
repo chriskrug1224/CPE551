@@ -12,26 +12,26 @@ def tuple():
     # Assign the first element of the tuple "t1" to x
     t1 = (13, 100, 99, 100, 999)
 
-    x = 
+    x = t1[0]
 
     # Print the second from the last element of the tuple "t1".
-    y = 
+    y = t1[3]
 
     
     #What's the index of 2 in the tuple "t2"?
     t2 = (55, 777, 54, 6, 76, 101, 1, 2, 8679, 98, 123, 98, 98)
-    z = 
+    z = t2.index(2)
 
     #How many times does 98 occur in the tuple "t2"?
-    f = 
+    f = t2.count(98)
 
     # What is the sum of all the numbers in the tuple "t2"?
     
-    m = 
+    m = sum(t2)
 
 
     # What is the maximum value in the tuple "t2"?
-    n = 
+    n = max(t2)
 
     return x, y, z, f, m, n
 
